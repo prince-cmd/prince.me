@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth; }
+
+html, body {
+  overflow-x: hidden; }
+
+.site-title {
+  font-size: 1.35rem;
+  line-height: 2.5rem; }
+
+.nav-link {
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  color: rgba(0, 0, 0, 0.8); }
+
+.nav-link:hover,
+.nav-link:focus,
+.active .nav-link {
+  color: rgba(0, 0, 0, 0.6); }
+
+.nav-item + .nav-item {
+  margin-left: 1rem; }
+
+.intro-title {
+  font-weight: 700; }
+
+.container-narrow {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+img.avatar {
+  border-radius: 30px; }
+
+footer a:not(.nav-link) {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer; }
+
+@media (min-width: 48em) {
+  .site-title {
+    float: left; }
+  .site-nav {
+    float: right; } }
+
+.marker {
+  position: relative;
+  display: inline;
+  width: auto; }
+
+.marker-center {
+  padding-right: 0; }
+
+.marker:after {
+  content: "";
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -25px;
+  right: -30px;
+  background-image: url("../images/marker.svg");
+  background-repeat: no-repeat; }
+
+.marker-center:after {
+  bottom: -30px;
+  left: 50%;
+  margin-left: -60px; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* Grid Item */
+.grid-sizer,
+.grid-item {
+  width: 100%; }
+
+.grid-item {
+  padding-bottom: 12px; }
+
+@media (min-width: 48em) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%; }
+  .grid-item {
+    float: left;
+    padding: 6px; } }
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  max-width: 100%; }
+
+/* Portfolio */
+.portolio-section .container {
+  padding: 0; }
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin: 0; }
+
+.portfolio-item figcaption {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.75);
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0); }
+
+.portfolio-item figcaption h4 {
+  color: #222;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3px; }
+
+.portfolio-item figcaption p {
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0; }
+
+.portfolio-item:hover figcaption {
+  transform: translate3d(0, 0, 0); }
