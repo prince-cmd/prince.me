@@ -1,2 +1,2 @@
 # prince.me
-My Static Web page
+Prince Portfolio
